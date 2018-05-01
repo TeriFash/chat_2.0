@@ -1,0 +1,5 @@
+# IDE setting ignore
+.idea/*
+
+# NPM folder ignore
+node_modules/*
