@@ -2,21 +2,55 @@
 @import "base/_fonts"
 @import "base/_settings"
 
+$green: #37c977
 body
 a
-  color: #666
+  color: #9d9d9d
 .main
   padding-top: 48px
 .sidebar
-
   height: 100vh
   position: fixed
+  .sidebar_sticky
+    margin: 22px 0
+    .nav-item
+      border-radius: 4px
+      position: relative
+      margin: 10px 0
+      transition: 500ms all ease-in-out
+      &:hover
+        background: $green
+        .nav-link
+          color: #F1F3F2
+      .nav-link
+        transition: 500ms color ease-in-out
+        i
+          margin-right: 20px
+          margin-left: 9px
   li
     a
-      color: #666
+      color: #9d9d9d
+      &.active
+        color: #666666
+        font-weight: bold
+.btn_menu_top
+  margin-bottom: 20px
+  .nav-link
+    -webkit-box-shadow: 0px 11px 63px -17px #37c977
+    -moz-box-shadow: 0px 11px 63px -17px #37c977
+    box-shadow: 0px 11px 63px -17px #37c977
+    display: flex
+    justify-content: center
+    padding: 1rem 1rem
+    background: $green
+    border-radius: 4px
+    color: #fff!important
+    font-weight: bold
+  &:hover
+    background: unset
 .navbar_main
   background: #F1F3F2
-  padding: 10px
+  padding: 10px 40px
   .navbar-brand
-    color: #37c977
+    color: $green
     font-weight: bold
