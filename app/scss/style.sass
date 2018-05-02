@@ -24,29 +24,35 @@ a
       letter-spacing: 1.1px
       position: relative
       color: #5a5a5a
-      background: rgba(247, 247, 247, 0.5)
+      background: rgb(247, 247, 247)
       padding: 30px 35px
       margin: 5px 0
       border-radius: 20px
       box-shadow: 0px 6px 38px -15px #e8e8e8
+      transition: 400ms opacity ease
+      &:hover
+        opacity: .8
       &.tip_r
         &:after
-
-          background: #ddf5ff80
-          right: 0
+          border-color: $green  transparent transparent $green
+          right: -18px
       &.tip_l
         &:after
-          background: rgba(247, 247, 247, 0.5)
-          left: 0
+          border-color: #F7F7F7 #F7F7F7 transparent transparent
+          left: -18px
       &.tip_r, &.tip_l
         position: relative
         &:after
-          position: absolute
-          top: 0
+          border-style: solid
+          border-width: 24px
           content: ''
-          width: 24px
-          height: 24px
-          transform: rotate(90deg)
+          display: block
+          height: 18px
+          top: 0px
+          width: 20px
+          position: absolute
+
+
       &.msg_one
         background: $green
         color: #fff
