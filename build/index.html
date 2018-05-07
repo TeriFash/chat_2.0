@@ -1,45 +1,71 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
-	<title>Chat 2.0</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+    <title>Chat 2.0</title>
 </head>
 <body>
-<!--NAVBAR-->
-
 <div class="container-fluid">
-	<div class="row">
-		<main class=" main">
-			<div class="content">
-				<div class="chat">
-				<h1 class="msg msg_one tip_r">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias asperiores consectetur error expedita id illo ipsa molestiae natus officia possimus provident, quam quia repudiandae sunt veniam vitae! Animi at autem corporis dicta, doloremque eum impedit magni molestiae nemo neque optio qui, repellat sed ullam veniam. Ad aliquam consequatur culpa cum cumque debitis, dignissimos ex harum impedit libero modi nihil odit quaerat quas quia quidem quos sint soluta unde, voluptatem? Aliquam consectetur enim expedita explicabo facere fugit itaque iusto molestias, officia optio perferendis possimus quasi quo, ratione reprehenderit vitae voluptas. A accusantium asperiores assumenda beatae consequuntur culpa deleniti dicta eligendi enim ex exercitationem explicabo, facilis fuga fugit, id illo illum ipsum laborum neque nisi non obcaecati omnis pariatur perferendis quae quibusdam quod reiciendis repudiandae similique suscipit tempora ullam unde ut vel veniam vitae voluptatem. Aliquid architecto eveniet, libero nostrum officia quasi quis repellendus repudiandae sint vel. Aperiam culpa deserunt inventore maiores necessitatibus possimus quam quo quod ut vel? Architecto atque doloribus earum exercitationem magni, mollitia nemo officia ut! Architecto aut blanditiis delectus deleniti eaque excepturi fuga harum minima nulla quo rerum sed tempore, voluptatem. Animi, aut beatae consequatur corporis, dolorem doloribus esse eveniet id laborum, odio quis saepe suscipit voluptatum.</h1>
-				<br>
-				<h1 class="msg msg_two tip_l">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium debitis dolorem dolores ea fugiat minima neque nulla unde vero? Aliquam cum est ex modi optio! Architecto aut debitis error laboriosam officia? Accusamus adipisci fuga quisquam quos tempore. Assumenda dicta neque officia quae tempore. Cumque illo magnam magni similique unde? Accusamus aliquid amet assumenda cum dolore doloremque dolorum ducimus, eligendi explicabo fugit hic in laborum magnam minima neque numquam officia officiis pariatur quo, recusandae rerum sequi similique voluptas. Eligendi explicabo minus non nostrum quas ullam. Doloribus eius facilis nemo nulla placeat quo. Accusantium, culpa cumque eum explicabo minima officiis. Exercitationem!</h1>
-				</div>
-				</div>
-			<div class="down">
-				<div class="input_block">
-					<input type="text" placeholder="...">
-					<button type="button" class="btn btn_main"><i class="fas fa-paper-plane"></i></button>
-				</div>
-			</div>
-		</main>
-	</div>
+    <div class="row">
+        <main class=" main">
+            <div class="content">
+                <div class="chat" id="message">
+                    <div class="msg msg_one tip_r">
+                        <h4 class="msg_name">Name Name</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias
+                        asperiores consectetur error expedita id illo ipsa molestiae natus officia possimus provident,
+                        quam quia repudiandae sunt veniam vitae! Animi at autem corporis dicta, doloremque eum impedit
+                        magni molestiae nemo neque optio qui, repellat sed ullam veniam. Ad aliquam consequatur culpa
+                        cum cumque debitis, dignissimos ex harum impedit libero modi nihil odit quaerat quas quia quidem
+                        quos sint soluta unde, voluptatem? Aliquam consectetur enim expedita explicabo facere fugit
+                        itaque iusto molestias, officia optio perferendis possimus quasi quo, ratione reprehenderit
+                        vitae voluptas. A accusantium asperiores assumenda beatae consequuntur culpa deleniti dicta
+                        eligendi enim ex exercitationem explicabo, facilis fuga fugit, id illo illum ipsum laborum neque
+                        nisi non obcaecati omnis pariatur perferendis quae quibusdam quod reiciendis repudiandae
+                        similique suscipit tempora ullam unde ut vel veniam vitae voluptatem. Aliquid architecto
+                        eveniet, libero nostrum officia quasi quis repellendus repudiandae sint vel. Aperiam culpa
+                        deserunt inventore maiores necessitatibus possimus quam quo quod ut vel? Architecto atque
+                        doloribus earum exercitationem magni, mollitia nemo officia ut! Architecto aut blanditiis
+                        delectus deleniti eaque excepturi fuga harum minima nulla quo rerum sed tempore, voluptatem.
+                        Animi, aut beatae consequatur corporis, dolorem doloribus esse eveniet id laborum, odio quis
+                        saepe suscipit voluptatum.
+                    </div>
+                    <div class="msg msg_two tip_l">
+                        <h4 class="msg_name">Name Name</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                        accusantium debitis dolorem dolores ea fugiat minima neque nulla unde vero? Aliquam cum est ex
+                        modi optio! Architecto aut debitis error laboriosam officia? Accusamus adipisci fuga quisquam
+                        quos tempore. Assumenda dicta neque officia quae tempore. Cumque illo magnam magni similique
+                        unde? Accusamus aliquid amet assumenda cum dolore doloremque dolorum ducimus, eligendi explicabo
+                        fugit hic in laborum magnam minima neque numquam officia officiis pariatur quo, recusandae rerum
+                        sequi similique voluptas. Eligendi explicabo minus non nostrum quas ullam. Doloribus eius
+                        facilis nemo nulla placeat quo. Accusantium, culpa cumque eum explicabo minima officiis.
+                        Exercitationem!
+                    </div>
+                </div>
+            </div>
+            <div class="down">
+                <form action="" id="form">
+                    <div class="input_block">
+                        <span id="status">OFFLINE</span>
+                        <input type="text" placeholder="..." id="formInput" required autofocus autocomplete="off">
+                        <button id="sendBtn" type="button" class="btn btn_main"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
 </div>
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script  src="../app/js/script.js"></script>
 </body>
 </html>
 
