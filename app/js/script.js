@@ -1,25 +1,25 @@
-const formInput = document.getElementById('formInput');
-const form = document.getElementById('form');
-const message = document.getElementById('message');
 const status = document.getElementById('status');
+const message = document.getElementById('message');
+const form = document.getElementById('form');
+const formInput = document.getElementById('formInput');
 
-const ws = new WebSocket('wss://localhost:8080');
+const ws = new WebSocket('ws://localhost:8080');
 
 function statusVal (value) {
-    status.innerHTML = value;
+    status.classList.add(value);
 }
-function sendMessage  (value) {
+function printMessage  (value) {
     const item = document.createElement('div');
     item.innerHTML = value;
     message.appendChild(item);
 }
-formInput.addEventListener('submit', event => {
+
+form.addEventListener('submit', event => {
     event.preventDefault();
-    ws.send( formInput.value );
-    formInput.value = '';
+ws.send( formInput.value );
+formInput.value = '';
 });
 
-ws.onopen = () => statusVal('Connected');
-ws.onclose = () => statusVal('No Connect');
-ws.onmessage = response => sendMessage(response.data);
-
+ws.onopen = () => statusVal('online');
+ws.onclose = () => statusVal('offline');
+ws.onmessage = response => printMessage(response.data);

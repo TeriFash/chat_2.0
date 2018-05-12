@@ -72,6 +72,8 @@ a
   height: 60px
   border-top: 1px solid rgba(229, 229, 229, 0.3)
   background: #f1f1f1
+  form
+    width: 100%
   .input_block
     width: 100%
     display: flex
@@ -79,6 +81,19 @@ a
     align-items: center
     flex-direction: row
     flex-wrap: nowrap
+    .status_block
+      width: 40px
+      justify-content: center
+      align-items: center
+      span
+        display: block
+        width: 16px
+        height: 16px
+        border-radius: 50%
+    .online
+      background: $green
+    .offline
+      background: crimson
     input
       margin-right: 20px
       padding: 0 20px
@@ -106,4 +121,3 @@ a
       &:hover
         background: #34bc6e
         border: 1px solid rgba(255, 255, 255, 0.4)
-
