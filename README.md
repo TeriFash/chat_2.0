@@ -1,1 +1,1 @@
-# chat_2.0
+# Chat that uses websocket
