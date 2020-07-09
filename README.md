@@ -1,6 +1,6 @@
 ## Chat that uses websocket
 
-Начало изучения технологии websocket (chat app)
+Start learning technology websocket (chat app)
 
 ✍ Run installation dependencies.<br />
 
